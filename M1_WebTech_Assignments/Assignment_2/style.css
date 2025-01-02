@@ -1,0 +1,66 @@
+body {
+    background-color: #9ae3f5; /* Light grayish blue background */
+    font-family: Arial, sans-serif;
+    color: #2c3e50; /* Dark slate gray for text */
+}
+.category-badge {
+    font-size: 0.9em;
+    padding: 5px 10px;
+    border-radius: 15px;
+    color: rgb(216, 110, 110); /* Ensure text color is visible on badges */
+}
+.category-food {
+    background-color: #f28b82; /* Soft red for Food category */
+}
+.category-travel {
+    background-color: #aecbfa; /* Soft blue for Travel category */
+}
+.category-shopping {
+    background-color: #d7aefb; /* Lavender for Shopping category */
+}
+.category-other {
+    background-color: #ccff90; /* Light green for Other category */
+}
+.card {
+    background-color: #d77070; /* White for card background */
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.card-title {
+    color: #1a73e8; /* Bright blue for card titles */
+}
+.table {
+    background-color: #a09cd8; /* White for table background */
+}
+.table thead {
+    background-color: #75b9db; /* Light gray for table headers */
+}
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: #97dbbf; /* Subtle gray for striped rows */
+}
+.table-striped tbody tr:nth-of-type(even) {
+    background-color: #df969f; /* Light blue for alternate rows */
+}
+.summary-table {
+    margin-top: 20px;
+}
+button {
+    background-color: #1a73e8; /* Bright blue for buttons */
+    color: rgb(161, 235, 205);
+    border: none;
+    transition: background-color 0.3s;
+}
+button:hover {
+    background-color: #1558c4; /* Darker blue on hover */
+}
+input, select {
+    background-color: #9965ca; /* Light gray for input fields */
+    border: 1px solid #a5ca82;
+    border-radius: 5px;
+    padding: 10px;
+}
+input:focus, select:focus {
+    border-color: #1a73e8; /* Blue outline on focus */
+    outline: none;
+}
+
