@@ -1,0 +1,36 @@
+Started by user Jennis Rufina
+
+Running as SYSTEM
+Building in workspace H:\nextrurn\new_jenkins_home\workspace\EXERCISE_2
+The recommended git tool is: NONE
+No credentials specified
+ > git.exe rev-parse --resolve-git-dir H:\nextrurn\new_jenkins_home\workspace\EXERCISE_2\.git # timeout=10
+Fetching changes from the remote Git repository
+ > git.exe config remote.origin.url https://github.com/jennis_1701/REACT_APP.git # timeout=10
+Fetching upstream changes from https://github.com/jennis_1701/REACT_APP.git
+ > git.exe --version # timeout=10
+ > git --version # 'git version 2.46.0.windows.1'
+ > git.exe fetch --tags --force --progress -- https://github.com/jennis_1701/REACT_APP.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git.exe rev-parse "refs/remotes/origin/master^{commit}" # timeout=10
+Checking out Revision 48e4851376b858843ad5bd3fcf8b6902c4877638 (refs/remotes/origin/master)
+ > git.exe config core.sparsecheckout # timeout=10
+ > git.exe checkout -f 48e4851376b858843ad5bd3fcf8b6902c4877638 # timeout=10
+Commit message: "Add files via upload"
+First time build. Skipping changelog.
+[EXERCISE_2] $ cmd /c call C:\Users\rufina\AppData\Local\Temp\jenkins18096572978247104717.bat
+
+H:\nextrurn\new_jenkins_home\workspace\EXERCISE_2>npm install 
+
+removed 1 package, and audited 1323 packages in 6s
+
+267 packages are looking for funding
+  run `npm fund` for details
+
+8 vulnerabilities (2 moderate, 6 high)
+
+To address all issues (including breaking changes), run:
+  npm audit fix --force
+
+Run `npm audit` for details.
+Archiving artifacts
+Finished: SUCCESS

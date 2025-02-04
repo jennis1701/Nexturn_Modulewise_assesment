@@ -1,0 +1,40 @@
+Started by user Jennis Rufina
+
+Running as SYSTEM
+Building in workspace C:\Users\Rufina\.jenkins\workspace\Freestyle Project
+The recommended git tool is: NONE
+using credential  JennisRufina_credentials
+Cloning the remote Git repository
+Cloning repository https://github.com/jennis_1701/flaskjenkin.git
+ > git.exe init C:\Users\Rufina\.jenkins\workspace\Freestyle Project # timeout=10
+Fetching upstream changes from https://github.com/jennis_1701/flaskjenkin.git
+ > git.exe --version # timeout=10
+ > git --version # 'git version 2.46.2.windows.1'
+using GIT_ASKPASS to set credentials credentials
+ > git.exe fetch --tags --force --progress -- https://github.com/jennis_1701/flaskjenkin.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git.exe config remote.origin.url https://github.com/jennis_1701/flaskjenkin.git # timeout=10
+ > git.exe config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+Avoid second fetch
+ > git.exe rev-parse "refs/remotes/origin/main^{commit}" # timeout=10
+Checking out Revision bde6ce25f0ac950b090e7a9d31723acf6ac750d0 (refs/remotes/origin/main)
+ > git.exe config core.sparsecheckout # timeout=10
+ > git.exe checkout -f bde6ce25f0ac950b090e7a9d31723acf6ac750d0 # timeout=10
+Commit message: "upload the flask"
+First time build. Skipping changelog.
+[Freestyle Project] $ cmd /c call C:\Users\Rufina\AppData\Local\Temp\jenkins14095111231266127057.bat
+
+C:\Users\Rufina\.jenkins\workspace\Freestyle Project># Step 1: Pull the repository 
+'#' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Rufina\.jenkins\workspace\Freestyle Project>git pull origin main 
+fatal: couldn't find remote ref main
+
+C:\Users\Rufina\.jenkins\workspace\Freestyle Project># Step 2: Set up a virtual environment 
+'#' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Rufina\.jenkins\workspace\Freestyle Project>python -m venv venv 
+
+C:\Users\Rufina\.jenkins\workspace\Freestyle Project>.\venv\Scripts\activate
+Finished: SUCCESS
